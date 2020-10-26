@@ -1,0 +1,30 @@
+body {
+    background: cadetblue;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+.media img{
+    width: 175px;
+    height: 130px;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: lightgray;
+}
+
+.navbar-nav .nav-item a:hover{
+    display: block;
+    background-color: lightgray;
+    color: #353535;
+}
+
+.navbar-nav .nav-item a:active{
+    display: block;
+    background-color: lightgray;
+    color: cadetblue;
+}
+
+.navbar{
+    background-color: #353535;
+}
+
