@@ -4,11 +4,6 @@ body {
     color: lightgray;
 }
 
-.media img{
-    width: 175px;
-    height: 130px;
-}
-
 .navbar-nav .nav-item .nav-link{
     color: lightgray;
 }
@@ -24,4 +19,15 @@ body {
 
 .card {
     display:inline-block;
+    background-color: #353535;
+    color: lightgray;
+}
+
+.card .card-body h1{
+    font-size: 100%;
+}
+
+.card-img-top{
+    width:100%;
+    height:auto;
 }
