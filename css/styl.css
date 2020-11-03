@@ -8,7 +8,7 @@ body {
     color: lightgray;
 }
 
-.navbar-nav .nav-item a:hover{
+.navbar .navbar-collapse .navbar-nav .nav-item a:hover{
     display: block;
     color: gold;
 }

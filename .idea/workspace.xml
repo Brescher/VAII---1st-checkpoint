@@ -21,14 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="670fb628-b2a0-4243-8894-4a10a25a749e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styl.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/blackhole.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/city.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/eiffel.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/mountain.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/musclecar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support.html" beforeDir="false" afterPath="$PROJECT_DIR$/support.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +47,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Cvičenie 3" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -61,7 +58,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604412129044</updated>
-      <workItem from="1604412131248" duration="4184000" />
+      <workItem from="1604412131248" duration="4915000" />
     </task>
     <servers />
   </component>
@@ -84,5 +81,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604415137750" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1604416762665">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604416762665" />
   </component>
 </project>
