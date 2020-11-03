@@ -1,6 +1,7 @@
 body {
-    background: cadetblue;
+    background: #353535;
     font-family: Arial, Verdana, sans-serif;
+    color: lightgray;
 }
 
 .media img{
@@ -14,17 +15,13 @@ body {
 
 .navbar-nav .nav-item a:hover{
     display: block;
-    background-color: lightgray;
-    color: #353535;
-}
-
-.navbar-nav .nav-item a:active{
-    display: block;
-    background-color: lightgray;
-    color: cadetblue;
+    color: gold;
 }
 
 .navbar{
     background-color: #353535;
 }
 
+.card {
+    display:inline-block;
+}
