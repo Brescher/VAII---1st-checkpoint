@@ -16,15 +16,7 @@
 <?php include "nav.php" ?>
 <body>
 
-<div class="container h-100">
-    <div class="row align-items-center h-100">
-        <div class="col-6 mx-auto">
-            <div class="jumbotron">
-                <img src="img/techDiff2.jpg" alt="">
-            </div>
-        </div>
-    </div>
-</div>
+
 
 </body>
 </html>
