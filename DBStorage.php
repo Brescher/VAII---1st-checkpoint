@@ -1,7 +1,7 @@
 <?php
 
 
-class DBStorage implements IStorage
+class DBStorage
 {
 
     /**

@@ -1,3 +1,15 @@
+<?php
+require  "Article.php";
+require "DBStorage.php";
+
+//$storage = new FileStorage();
+$storage = new DBStorage();
+
+if (isset($_POST['title'])) {
+    $storage->Save(new Article($_POST['title'], $_POST['text']));
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +28,17 @@
 <?php include "nav.php" ?>
 <body>
 
-
+<form method="post">
+    <input type="text" name="title">
+    <input type="text" name="text">
+    <input type="submit" value="Odoslat">
+</form>
+<?php foreach ($storage->LoadAll() as $article) { ?>
+    <div>
+        <h3><?php echo $article->getTitle() ?></h3>
+        <p><?php echo $article->getText() ?></p>
+    </div>
+<?php } ?>
 
 </body>
 </html>
