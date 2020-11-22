@@ -41,29 +41,46 @@ if (isset($_POST['title'])) {
 
         </div>
     </div>
-    <div class="row">
-        <div class="col-3">
+    <div class="row justify-content-center mt-1" align="center">
 
-        </div>
         <div class="col-sm-6">
             <form method="post">
-                <input type="text" name="title">
-                <input type="text" name="text">
+                <input type="text" name="title" required>
+            </form>
+        </div>
+
+    </div>
+    <div class="row justify-content-center mt-1" align="center">
+
+        <div class="col-sm-6">
+            <form method="post">
+                <textarea name="text" rows="5" cols="40" required></textarea>
+            </form>
+        </div>
+
+    </div>
+    <div class="row justify-content-center mt-1" align="center">
+
+        <div class="col-sm-6">
+            <form method="post">
                 <input type="submit" value="Odoslat">
             </form>
         </div>
-        <div class="col-3">
 
-        </div>
     </div>
+
 </div>
 </div>
 <?php foreach ($storage->LoadAll() as $article) { ?>
-    <div class="container">
-        <div class="row">
+    <div class="container"">
+        <div class="row mt-4">
+            <div class="col-sm-3">
+
+            </div>
             <div class="col-sm-6">
                 <h3><?php echo $article->getTitle() ?></h3>
                 <p><?php echo $article->getText() ?></p>
+
             </div>
         </div>
     </div>
