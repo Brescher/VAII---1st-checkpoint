@@ -9,8 +9,7 @@ if (isset($_POST['title'])) {
     $storage->Save(new Article($_POST['title'], $_POST['text']));
 }
 
-?>
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,63 +27,58 @@ if (isset($_POST['title'])) {
 <?php include "nav.php" ?>
 <body>
 
+
 <div class="container">
     <div class="row">
         <div class="col-2">
 
         </div>
+
         <div class="col-sm-9">
-            <p>V prípade problému, tu napíšte ticket, pracovník podpory si ho prečíta a pokúsi sa vyriešíť váš problém.</p>
+            <p>V prípade problému, tu napíšte ticket, pracovník podpory si ho prečíta a pokúsi sa vyriešíť váš
+                problém.</p>
             <p>Do prvého políčka napíšte názov problému a do druhého jeho stručný popis.</p>
         </div>
+
         <div class="col-1">
 
         </div>
     </div>
-    <div class="row justify-content-center mt-1" align="center">
 
-        <div class="col-sm-6">
-            <form method="post">
-                <input type="text" name="title" required>
-            </form>
+    <form method="post">
+        <div class="row justify-content-center mt-1" align="center">
+            <div class="col-sm-6">
+                    <input type="text" name="title" required>
+            </div>
         </div>
 
-    </div>
-    <div class="row justify-content-center mt-1" align="center">
-
-        <div class="col-sm-6">
-            <form method="post">
-                <textarea name="text" rows="5" cols="40" required></textarea>
-            </form>
+        <div class="row justify-content-center mt-1" align="center">
+            <div class="col-sm-6">
+                    <textarea name="text" rows="5" cols="40" required></textarea>
+            </div>
         </div>
 
-    </div>
-    <div class="row justify-content-center mt-1" align="center">
-
-        <div class="col-sm-6">
-            <form method="post">
+        <div class="row justify-content-center mt-1" align="center">
+            <div class="col-sm-6">
                 <input type="submit" value="Odoslat">
-            </form>
+            </div>
         </div>
-
+    </form>
     </div>
-
-</div>
 </div>
 <?php foreach ($storage->LoadAll() as $article) { ?>
-    <div class="container"">
-        <div class="row mt-4">
-            <div class="col-sm-3">
+    <div class="container">
+        <div class="row  mt-4">
+            <div class = "col-sm-3">
 
             </div>
+
             <div class="col-sm-6">
                 <h3><?php echo $article->getTitle() ?></h3>
                 <p><?php echo $article->getText() ?></p>
-
             </div>
         </div>
     </div>
 <?php } ?>
-
 </body>
 </html>
