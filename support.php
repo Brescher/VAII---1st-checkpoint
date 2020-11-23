@@ -78,28 +78,23 @@ if (isset($_POST['title'])) {
 
                 <h3><?php echo $article->getTitle() ?></h3>
                 <p><?php echo $article->getText() ?></p>
-                <p><?php echo $article->getId() ?></p>
-                <a href="?fn=selection&id=<?= $article->getId() ?>">Zmazat</a>
+                
+                <a href="?selection&id=<?= $article->getId() ?>">Zmazat</a>
 
-                <?php
-                if ($_GET['fn'] == "selection") {
-                    if(isset($_GET['id'])){
-
-                        $id = $_GET['id'];
-                        $storage->Delete($id);
-                    }
-                }
-                ?>
             </div>
         </div>
     </div>
 <?php } ?>
-
-
-
-
-
-
 </body>
 </html>
 
+
+<?php
+if (isset($_GET['selection'])) {
+
+
+        $id = $_GET['id'];
+        $storage->Delete($id);
+
+}
+?>
