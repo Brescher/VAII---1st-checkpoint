@@ -75,10 +75,15 @@ if (isset($_POST['title'])) {
             </div>
 
             <div class="col-sm-6">
+
                 <h3><?php echo $article->getTitle() ?></h3>
                 <p><?php echo $article->getText() ?></p>
                 <p><?php echo $article->getId() ?></p>
-                <a href="?&id=<?= $article->getId()?>">Zmazat</a>
+
+                <?php
+                $id = 1;
+                $storage->Delete($id);
+                ?>
             </div>
         </div>
     </div>

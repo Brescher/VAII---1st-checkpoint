@@ -44,7 +44,9 @@ class DBStorage
             $this->pdo->exec($sql);
 
         } catch(PDOException $e) {
-            echo $sql . "<br>" . $e->getMessage();
+            alert($sql . "<br>" . $e->getMessage());
+        } catch(Exception $e){
+            alert("chyba");
         }
 
     }
