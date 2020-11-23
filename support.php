@@ -1,8 +1,9 @@
 <?php
 require "Article.php";
+require "ArticleLoad.php";
 require "DBStorage.php";
 
-//$storage = new FileStorage();
+
 $storage = new DBStorage();
 
 if (isset($_POST['title'])) {
@@ -76,6 +77,7 @@ if (isset($_POST['title'])) {
             <div class="col-sm-6">
                 <h3><?php echo $article->getTitle() ?></h3>
                 <p><?php echo $article->getText() ?></p>
+                <p><?php echo $article->getId() ?></p>
             </div>
         </div>
     </div>

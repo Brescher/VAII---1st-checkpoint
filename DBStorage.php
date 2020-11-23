@@ -21,7 +21,7 @@ class DBStorage
         $r = $this->pdo->query("SELECT * FROM articles");
 
         foreach ($r as $item) {
-            $result[] = new Article($item['title'],$item['text']);
+            $result[] = new ArticleLoad($item['id'],$item['title'],$item['text']);
         }
 
         return $result;
