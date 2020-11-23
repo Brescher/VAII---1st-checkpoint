@@ -50,4 +50,17 @@ class DBStorage
         }
 
     }
+
+    public function getOne($id){
+        $r = $this->pdo->query("SELECT * FROM articles where id = $id");
+        $result = null;
+
+            foreach($r as $item) {
+                if($item == $id){
+                    $result = $item;
+                }
+            }
+        return $result;
+
+    }
 }
