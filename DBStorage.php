@@ -32,4 +32,20 @@ class DBStorage
         $statement = $this->pdo->prepare("INSERT INTO articles (title, text) value (?,?)");
         $statement->execute([$param->getTitle(), $param->getText()]);
     }
+
+    public function Delete($id){
+
+        try {
+
+            $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+            $sql = "DELETE FROM articles WHERE id=$id";
+
+            $this->pdo->exec($sql);
+
+        } catch(PDOException $e) {
+            echo $sql . "<br>" . $e->getMessage();
+        }
+
+    }
 }
